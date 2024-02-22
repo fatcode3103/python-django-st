@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <body>
-        {% for x in fruits %}
-        <h1>{{ x }}</h1>
-        {% endfor %}
-
-        <p>In views.py you can see what the fruits variable looks like.</p>
-    </body>
-</html>
+{% if greeting == 1 %}
+<h1>Hello</h1>
+<ul>
+    {% for x in mymembers %}
+    <li>{{ x.firstname }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<h1>Bye</h1>
+{% endif %}
